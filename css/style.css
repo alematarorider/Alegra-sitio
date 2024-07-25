@@ -1,0 +1,579 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Baumans&display=swap');
+/* font-family: "Amatic SC", sans-serif; font-family: "Baumans", system-ui; */
+
+* {
+    font-family: "Amatic SC", sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+/*********************index********************/
+/* BODY  */
+
+.index-body {  
+    color:white;
+    display: inline;
+    flex-direction: row;
+}
+
+.color {
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+/* HEADER*/
+
+.index-body header {
+    display:flex;
+    flex-direction: row;
+    height: 55rem;
+    width: 100%;
+    background-image: url(../asset/backgrounds/alegra-head-background-head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.main {
+    font-size: 15rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align:right;
+    flex-direction: row;
+    justify-content: space-around;
+    height: min-content;
+    margin-top: 10rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    color: white;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.color {
+    text-decoration: none;
+    font-display: none;
+}
+
+.options li{
+    display: inline;
+    font-size: 40px;
+    text-align: center;
+    list-style: none;
+    
+}
+
+/* MAIN */
+.index-main {
+    display: inline-flex;
+    height: 80%;
+    width:100%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    background-image: url(../asset/backgrounds/alegra-body-background.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.salegroup {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 58rem;
+}
+
+.sale-title {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 9rem;
+    width: 18rem;
+    height: 58rem;
+}
+
+.sale-title h2 {
+    margin-top: 4rem;
+    font-size: 4rem;
+}
+
+.sale-title a {
+    text-align: center;
+    flex-grow: 1;
+    color: white;
+    font-display: none;
+    text-decoration: none;
+}
+
+.sales {
+    font-size: 3rem;
+    text-align: center;
+    align-items: end;
+    flex-grow: 1;
+    margin-top: 20rem;
+    
+}
+
+.main-pic img {
+    align-items: center;
+    height: 50rem;
+    width: 30rem;
+    align-items: end;
+    margin-top: 4rem;
+    margin-right: 4rem;
+    margin-left: 10rem;
+}
+
+.small-pic {
+    height: 58rem;
+    width: 30rem;
+    display:block;
+    margin-left: 2rem;
+    align-content: center;
+}
+
+.small-1 img {
+    height: 16rem;
+    width: 12rem;
+
+}
+
+.small-2 img {
+    height: 16rem;
+    width: 12rem;
+}
+
+.small-3 img {
+    height: 16rem;
+    width: 12rem;
+}
+
+/* FOOTER */
+
+.index-footer {
+    height: 20rem;
+    width: 100%;
+    background-color: #1F3732;
+    margin-top: 0rem;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.first {
+    background-image: url(../asset/backgrounds/colibri.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0rem;
+    width:18rem;
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+}
+
+.first h2 {
+font-size: 3rem;
+text-align: center;
+display: flex;
+justify-content: center;
+margin: 0;
+flex: 1;
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.input {
+    display: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.newsletter {
+    justify-content: center;
+    flex: 1;
+}
+
+.sub {
+    padding-top: 2.5rem;
+}
+
+.sub button {
+    text-align: start;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    height: 7.5rem;
+    justify-content: space-between;
+}
+
+.footer ul {
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    align-content: end;
+}
+
+.footer ul li {
+    display: inline-flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: 150px;
+    }
+
+.location {
+    display: flex;
+    padding-bottom: 1.25rem;
+    gap: 33%;
+}
+
+.last {
+    padding-right: 3rem;
+    margin-top: 2.5rem;
+}
+
+/*********************login********************/
+/* BODY */
+
+.login-body {
+    background-image: url(../asset/backgrounds/fullback-login.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    width: 100%;
+    height: max-content;
+    color: white;
+}
+
+/* HEADER */
+
+.log-title {
+    color: white;
+    font-size: 32px;
+}
+
+/* MAIN */
+
+.main-login {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 {
+    background-image: url(../asset/backgrounds/hanged-bw.jpg);
+    width: 600px;
+    height: 400px;
+    background-size: cover;
+    align-content: center;
+
+}
+
+.blur1 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.log-in1 {
+    width: 400px;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.log-in1 h2 {
+    font-size: 3rem;
+    margin: 0px;
+}
+
+.log-in-input {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 65px;
+}
+
+.press-login {
+    align-items: flex-start;
+    width: 150px;
+    height: 20px;
+}
+
+.forgot a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section2 {
+    background-image: url(../asset/backgrounds/department-bw.jpg);
+    margin-top: 40px;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.blur2 {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.log-in2 {
+    width: 400px;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.log-in2 h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.sign-up-input {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* FOOTER */
+
+.login-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.login-section {
+    width: 600px;
+}
+
+.login-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+/* ****************Galeria******************** */
+/* ******CAMPERAS - BLUSAS - PANTALONES***** */
+
+/* BODY */
+.galeria {
+    background-image: url(../asset/backgrounds/gallery-BG.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* HEADER */
+.galeria-menu {
+    /* background-image: url(../asset/backgrounds/girl-smiling-full-big.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+}
+
+.galeria-list {
+    font-size: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    list-style: none;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.galeria-list li {
+    display: flex;
+    flex-direction: row;
+}
+
+.title-gal {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    font-size: 100px;
+    justify-content: center;
+}
+
+/* MAIN */
+
+.master-grid {
+    /* background-image: url(../asset/backgrounds/gallery-BG.jpg); */
+    background-size: contain;
+    background-repeat: repeat;
+    padding-left: 20px;
+    justify-items: center;
+}
+
+.galeria-titulo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.galeria-titulo h2 {
+    font-size: 80px;
+}
+
+.left-section {
+    display: grid;
+    grid-template-columns: 600px 400px 400px;
+    grid-template-rows: 500px 40px;
+}
+
+.left-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 40px;
+    list-style: none;
+}
+
+.left-list li {
+    padding-bottom: 20px;
+}
+
+.blusa-pic1-1 {
+    background-image: url(../asset/blusas/blusas-f1.1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.blusa-pic1-2 {
+    background-image: url(../asset/blusas/blusas-f1.2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.pic1-description {
+    width: 300px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15px;
+}
+
+.mid-grid {
+    display: grid;
+    grid-template-columns: 600px 266px 266px 266px;
+    grid-template-rows: 350px 40px;
+}
+
+.blusa-pic2-1 {
+    background-image: url(../asset/blusas/blusas-f2.1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.blusa-pic2-2 {
+    background-image: url(../asset/blusas/blusas-f2.2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.blusa-pic2-3 {
+    background-image: url(../asset/blusas/blusas-f2.3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.end-grid {
+    display: grid;
+    grid-template-columns: 600px 266px 266px 266px;
+    grid-template-rows: 350px 40px;
+}
+
+.blusa-pic3-1 {
+    background-image: url(../asset/blusas/blusas-f3.1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.blusa-pic3-2 {
+    background-image: url(../asset/blusas/blusas-f3.2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.blusa-pic3-3 {
+    background-image: url(../asset/blusas/blusas-f3.3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.media {
+    background-color: blueviolet;
+}
