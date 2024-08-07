@@ -6,8 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 
 /*********************index********************/
 /* BODY  */
@@ -16,6 +16,9 @@
     color: white;
     display: inline;
     flex-direction: row;
+    background-image: url(../asset/backgrounds/alegra-head-background-head.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .color {
@@ -32,15 +35,13 @@ a {
 .index-body header {
     display: flex;
     flex-direction: row;
-    height: 55rem;
+    flex-wrap: nowrap;
+    height: 30rem;
     width: 100%;
-    background-image: url(../asset/backgrounds/alegra-head-background-head.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
 }
 
 .main {
+    color: white;
     font-size: 15rem;
     margin-top: 2rem;
     margin-left: 5rem;
@@ -49,22 +50,24 @@ a {
 .main-nav {
     display: inline-block;
     text-align: right;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: nowrap;
     height: min-content;
     margin-top: 10rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
     color: white;
     width: 100%;
+}
+
+.all {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .options {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    gap: 5rem;
+    justify-content: end;
+    padding: 0;
 }
 
 .color {
@@ -74,22 +77,19 @@ a {
 
 .options li {
     display: inline;
-    font-size: 40px;
+    font-size: 2.25rem;
     text-align: center;
     list-style: none;
+}
 
+body a:hover {
+    color: blueviolet;
 }
 
 /* MAIN */
+
 .index-main {
-    display: inline-flex;
-    height: 80%;
     width: 100%;
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    background-image: url(../asset/backgrounds/alegra-body-background.jpg);
-    background-repeat: repeat;
-    background-size: contain;
 }
 
 .salegroup {
@@ -151,10 +151,15 @@ a {
     justify-content: center;
 }
 
+.small-1,
+.small-2,
+.small-3 {
+    text-align: center;
+}
+
 .small-1 img {
     height: 16rem;
     width: 12rem;
-
 }
 
 .small-2 img {
@@ -167,10 +172,21 @@ a {
     width: 12rem;
 }
 
+.small-pic a:hover {
+    color: yellow;
+}
+
+.small-1 img:hover,
+.small-2 img:hover,
+.small-3 img:hover {
+    filter: drop-shadow(2px 2px 5px yellow);
+}
+
+
 /* FOOTER */
 
 .index-footer {
-    height: 20rem;
+    height: 22.5rem;
     width: 100%;
     background-color: #1F3732;
     margin-top: 0rem;
@@ -229,8 +245,7 @@ a {
     flex-direction: row;
     justify-content: end;
     width: 100%;
-    height: 7.5rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer ul {
@@ -264,14 +279,14 @@ a {
 
     .index-body header {
         width: 100%;
-        height: 440px;
+        height: 240px;
         display: flex;
         flex-direction: column;
         background-position-y: -10rem;
     }
 
     .main {
-        width: 100%;
+        width: min-content;
         height: 100px;
         font-size: 5.5rem;
         margin: 0;
@@ -326,7 +341,7 @@ a {
 
     .index-body header {
         width: 100%;
-        height: 440px;
+        height: 240px;
         display: flex;
         flex-direction: column;
     }
@@ -479,38 +494,33 @@ a {
     }
 
     .index-body header {
-        height: 180px;
+        height: 10rem;
         background-image: none;
     }
 
-    .main-nav {
+    .main-nav,
+    .salegroup a,
+    .salegroup img,
+    .main-pic,
+    .sale-title,
+    .sale-title h2,
+    .first h2 {
         display: none;
     }
 
     .index-main {
-        display: flex;
         background-image: none;
-        height: 37.5rem;
-        justify-content: center;
     }
 
-    .salegroup {
+    .small-pic {
         display: grid;
         width: 20rem;
-        grid-template-rows: 150px 150px 150px;
-        grid-template-columns: 280px;
-        gap: 40px;
+        grid-template-rows: 9.375rem 9.375rem 9.375rem;
+        grid-template-columns: 17.5rem;
+        align-content: space-around;
     }
 
-    .salegroup a {
-        display: none;
-    }
-
-    .salegroup img {
-        display: none;
-    }
-
-    .main-pic {
+    .small-1 {
         grid-area: 1/1;
         background-image: url(../asset/iphone/coat320.jpg);
         align-items: center;
@@ -519,7 +529,7 @@ a {
         background-size: cover;
     }
 
-    .small-pic {
+    .small-2 {
         grid-area: 2/1;
         background-image: url(../asset/iphone/blusa320.jpg);
         align-items: center;
@@ -528,17 +538,13 @@ a {
         background-size: cover;
     }
 
-    .sale-title {
+    .small-3 {
         grid-area: 3/1;
         background-image: url(../asset/iphone/pant320.jpg);
         align-items: center;
         width: 100%;
         height: 100%;
         background-size: cover;
-    }
-
-    .sale-title h2 {
-        display: none;
     }
 
     .index-footer {
@@ -551,107 +557,6 @@ a {
         height: 6.25rem;
         width: 100%;
         justify-content: center;
-    }
-
-    .first h2 {
-        display: none;
-    }
-
-    .index-footer h2 {
-        flex-direction: column;
-        height: 3.125rem;
-    }
-
-    .input,
-    .footer,
-    .last {
-        display: none;
-    }
-}
-
-@media (max-width: 320px) {
-
-    .index-body {
-        background-image: url(../asset/backgrounds/gallery-BG.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .index-body header {
-        height: 180px;
-        background-image: none;
-    }
-
-    .main-nav {
-        display: none;
-    }
-
-    .index-main {
-        background-image: none;
-        height: 37.5rem;
-    }
-
-    .salegroup {
-        display: grid;
-        width: 20rem;
-        grid-template-rows: 150px 150px 150px;
-        grid-template-columns: 280px;
-        gap: 40px;
-    }
-
-    .salegroup a {
-        display: none;
-    }
-
-    .salegroup img {
-        display: none;
-    }
-
-    .main-pic {
-        grid-area: 1/1;
-        background-image: url(../asset/iphone/coat320.jpg);
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-    }
-
-    .small-pic {
-        grid-area: 2/1;
-        background-image: url(../asset/iphone/blusa320.jpg);
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-    }
-
-    .sale-title {
-        grid-area: 3/1;
-        background-image: url(../asset/iphone/pant320.jpg);
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-    }
-
-    .sale-title h2 {
-        display: none;
-    }
-
-    .index-footer {
-        height: 6.25rem;
-        background-color: rgb(83, 83, 52);
-    }
-
-    .first {
-        background-image: none;
-        height: 6.25rem;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .first h2 {
-        display: none;
     }
 
     .index-footer h2 {
@@ -685,14 +590,14 @@ a {
 
 .log-title {
     color: white;
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 /* MAIN */
 
 .main-login {
-    width: 800px;
-    height: 800px;
+    width: 50rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -700,16 +605,16 @@ a {
 
 .section1 {
     background-image: url(../asset/backgrounds/hanged-bw.jpg);
-    width: 600px;
-    height: 400px;
+    width: 37.5rem;
+    height: 25rem;
     background-size: cover;
     align-content: center;
 
 }
 
 .blur1 {
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -718,12 +623,13 @@ a {
 }
 
 .log-in1 {
-    width: 400px;
-    height: 300px;
+    width: 25rem;
+    height: 18.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     margin: 0px;
 }
 
@@ -735,8 +641,8 @@ a {
 .log-in-input {
     display: flex;
     flex-direction: column;
-    width: 150px;
-    height: 65px;
+    width: 9.375rem;
+    height: 4.0625rem;
 }
 
 .press-login {
@@ -753,9 +659,9 @@ a {
 
 .section2 {
     background-image: url(../asset/backgrounds/department-bw.jpg);
-    margin-top: 40px;
-    width: 600px;
-    height: 400px;
+    margin-top: 2.5rem;
+    width: 37.5rem;
+    height: 25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -763,8 +669,8 @@ a {
 }
 
 .blur2 {
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -773,8 +679,8 @@ a {
 }
 
 .log-in2 {
-    width: 400px;
-    height: 300px;
+    width: 25rem;
+    height: 18.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -793,6 +699,82 @@ a {
     flex-direction: column;
 }
 
+.forgot a {
+    color: white;
+}
+
+.press-login:focus{
+    color: blueviolet;
+}
+
+@media (max-width: 426px){
+
+    .a1 {
+        font-size: 2.5rem;
+    }
+
+    .main-login {
+        width: 100%;
+    }
+
+    .section1 {
+        width: 23rem;
+        height: 100%;
+    }
+
+    .section2 {
+        width: 23rem;
+    }
+}
+
+@media (max-width: 375px){
+
+    .a1 {
+        font-size: 2rem;
+    }
+
+    .main-login {
+        width: 100%;
+    }
+
+    .section1 {
+        width: 15rem;
+        height: 100%;
+    }
+
+    .blur1 {
+        width: 15rem;
+    }
+
+    .section2 {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 320px){
+
+    .a1 {
+        font-size: 2rem;
+    }
+
+    .main-login {
+        width: 100%;
+    }
+
+    .section1 {
+        width: 15rem;
+        height: 100%;
+    }
+
+    .blur1 {
+        width: 15rem;
+    }
+
+    .section2 {
+        width: 15rem;
+    }
+}
+
 /* FOOTER */
 
 .login-footer {
@@ -803,7 +785,7 @@ a {
 }
 
 .login-section {
-    width: 600px;
+    width: 37.5rem;
 }
 
 .login-media {
@@ -940,7 +922,7 @@ a {
     display: grid;
     grid-template-columns: 266px 266px 266px 266px 266px;
     grid-template-rows: 350px 40px 350px 40px;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-right: 20px;
 }
 
@@ -1363,7 +1345,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .master-grid {
         height: 1600px;
@@ -1404,7 +1386,9 @@ footer {
         background-position-x: -30px;
     }
 
-    .blusa-pic2-4, .camperas-pic2-4, .pants-pic2-4{
+    .blusa-pic2-4,
+    .camperas-pic2-4,
+    .pants-pic2-4 {
         grid-area: 3/1;
         background-size: cover;
     }
@@ -1413,7 +1397,9 @@ footer {
         grid-area: 4/1;
     }
 
-    .blusa-pic2-5, .camperas-pic2-5, .pants-pic2-5{
+    .blusa-pic2-5,
+    .camperas-pic2-5,
+    .pants-pic2-5 {
         grid-area: 3/2;
         background-size: cover;
     }
@@ -1422,7 +1408,9 @@ footer {
         grid-area: 4/2;
     }
 
-    .blusa-pic3-1, .camperas-pic3-1, .pants-pic3-1{
+    .blusa-pic3-1,
+    .camperas-pic3-1,
+    .pants-pic3-1 {
         grid-area: 3/3;
         background-size: cover;
     }
@@ -1431,7 +1419,9 @@ footer {
         grid-area: 4/3;
     }
 
-    .blusa-pic3-2, .camperas-pic3-2, .pants-pic3-2{
+    .blusa-pic3-2,
+    .camperas-pic3-2,
+    .pants-pic3-2 {
         grid-area: 5/1;
         background-size: cover;
     }
@@ -1440,7 +1430,9 @@ footer {
         grid-area: 6/1;
     }
 
-    .blusa-pic3-3, .camperas-pic3-3, .pants-pic3-3{
+    .blusa-pic3-3,
+    .camperas-pic3-3,
+    .pants-pic3-3 {
         grid-area: 5/2;
         background-size: cover;
     }
@@ -1449,7 +1441,9 @@ footer {
         grid-area: 6/2;
     }
 
-    .blusa-pic3-4, .camperas-pic3-4, .pants-pic3-4{
+    .blusa-pic3-4,
+    .camperas-pic3-4,
+    .pants-pic3-4 {
         grid-area: 5/3;
         background-size: cover;
     }
@@ -1458,11 +1452,194 @@ footer {
         grid-area: 6/3;
     }
 
-    .blusa-pic3-5, .camperas-pic3-5, .pants-pic3-5{
+    .blusa-pic3-5,
+    .camperas-pic3-5,
+    .pants-pic3-5,
+    .pic3-5description {
+        display: none;
+    }
+}
+
+@media (max-width: 726px) {
+
+    .galeria-page {
+        height: 2600px;
+    }
+
+    .galeria-menu {
+        height: 200px;
+    }
+
+    .gal-nav {
         display: none;
     }
 
-    .pic3-5description {
+    .title-gal {
+        font-size: 40px;
+    }
+
+    .master-grid {
+        height: 2200px;
+    }
+
+    .left-section {
+        display: grid;
+        grid-template-columns: 140px 140px;
+        grid-template-rows: 300px 60px;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .pants-pic1-1,
+    .blusa-pic1-1,
+    .camperas-pic1-1 {
+        grid-area: 1/1;
+    }
+
+    .pic1-1description {
+        grid-area: 2/1;
+    }
+
+    .pants-pic1-2,
+    .blusa-pic1-2,
+    .camperas-pic1-2 {
+        grid-area: 1/2;
+    }
+
+    .pic1-2description {
+        grid-area: 2/2;
+    }
+
+    .pants-pic1-3,
+    .blusa-pic1-3,
+    .camperas-pic1-3,
+    .pic1-3description {
         display: none;
+    }
+
+    .mid-grid {
+        display: grid;
+        grid-template-columns: 140px 140px;
+        grid-template-rows: 300px 60px 300px 60px 300px 60px 300px 60px 300px 60px;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .pants-pic2-1,
+    .blusa-pic2-1,
+    .camperas-pic2-1 {
+        grid-area: 1/1;
+    }
+
+    .pic2-1description {
+        grid-area: 2/1;
+    }
+
+    .pants-pic2-2,
+    .blusa-pic2-2,
+    .camperas-pic2-2 {
+        grid-area: 1/2;
+    }
+
+    .pic2-2description {
+        grid-area: 2/2;
+    }
+
+    .pants-pic2-3,
+    .blusa-pic2-3,
+    .camperas-pic2-3 {
+        grid-area: 3/1;
+    }
+
+    .pic2-3description {
+        grid-area: 4/1;
+    }
+
+    .pants-pic2-4,
+    .blusa-pic2-4,
+    .camperas-pic2-4 {
+        grid-area: 3/2;
+    }
+
+    .pic2-4description {
+        grid-area: 4/2;
+    }
+
+    .pants-pic2-5,
+    .blusa-pic2-5,
+    .camperas-pic2-5 {
+        grid-area: 5/1;
+    }
+
+    .pic2-5description {
+        grid-area: 6/1;
+    }
+
+    .pants-pic3-1,
+    .blusa-pic3-1,
+    .camperas-pic3-1 {
+        grid-area: 5/2;
+    }
+
+    .pic3-1description {
+        grid-area: 6/2;
+    }
+
+    .pants-pic3-2,
+    .blusa-pic3-2,
+    .camperas-pic3-2 {
+        grid-area: 7/1;
+    }
+
+    .pic3-2description {
+        grid-area: 8/1;
+    }
+
+    .pants-pic3-3,
+    .blusa-pic3-3,
+    .camperas-pic3-3 {
+        grid-area: 7/2;
+    }
+
+    .pic3-3description {
+        grid-area: 8/2;
+    }
+
+    .pants-pic3-4,
+    .blusa-pic3-4,
+    .camperas-pic3-4 {
+        grid-area: 9/1;
+    }
+
+    .pic3-4description {
+        grid-area: 10/1;
+    }
+
+    /* .pants-pic3-5 {
+        background-image: url(../asset/pantalones/pants-f3.5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        grid-area: 9/2;
+    }
+
+    .pic3-5description {
+        grid-area: 10/2;
+    } */
+
+    .media {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .media h2 {
+        padding: 0;
+    }
+
+    .icon {
+        width: min-content;
+        gap: 50px;
     }
 }
