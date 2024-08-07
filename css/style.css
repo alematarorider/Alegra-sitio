@@ -19,6 +19,7 @@
     background-image: url(../asset/backgrounds/alegra-head-background-head.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: auto;
 }
 
 .color {
@@ -54,8 +55,7 @@ a {
 .main-nav {
     display: inline-block;
     text-align: right;
-    flex-wrap: nowrap;
-    height: min-content;
+    height: auto;
     margin-top: 10rem;
     color: white;
     width: 100%;
@@ -65,9 +65,9 @@ a {
 .options {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    justify-content: end;
     padding-right: 2rem;
+    justify-content: end;
+    gap:15rem;
 }
 
 .options a {
@@ -81,10 +81,10 @@ a {
 }
 
 .options li {
-    display: inline;
+    display: flex;
     font-size: 2.25rem;
-    text-align: center;
     list-style: none;
+
 }
 
 body a:hover {
@@ -93,9 +93,6 @@ body a:hover {
 
 /* MAIN */
 
-.index-main {
-    width: 100%;
-}
 
 .salegroup {
     display: inline-flex;
@@ -103,6 +100,7 @@ body a:hover {
     width: 100%;
     height: 58rem;
     justify-content: center;
+    justify-content: space-around;
 }
 
 .sale-title {
@@ -194,6 +192,7 @@ body a:hover {
     height: 22.5rem;
     width: 100%;
     background-color: #1F3732;
+    background-position: auto;
     margin-top: 0rem;
     display: flex;
     justify-content: space-between;
@@ -272,12 +271,12 @@ body a:hover {
 .location {
     display: flex;
     padding-bottom: 1.25rem;
-    gap: 33%;
+justify-content: space-around;
 }
 
 .last {
-    padding-right: 3rem;
-    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    padding-right: 1rem;
 }
 
 @media (max-width: 1024px) {
@@ -309,12 +308,16 @@ body a:hover {
     }
 
     .options {
+        display: flex;
+        justify-content: center;
         height: 30px;
         width: 100%;
-        justify-content: space-around;
     }
 
     .options li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 24px;
         width: 120px;
     }
@@ -335,10 +338,6 @@ body a:hover {
     .footer ul li {
         width: max-content;
         align-items: end;
-    }
-
-    .last {
-        padding-right: 1rem;
     }
 }
 
@@ -366,7 +365,6 @@ body a:hover {
         display: flex;
         flex-direction: row;
         margin: 0;
-        align-items: center;
     }
 
     .index-main {
@@ -374,9 +372,9 @@ body a:hover {
     }
 
     .options {
-        height: 30px;
+        height: 1.875rem;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .options li {
@@ -460,8 +458,8 @@ body a:hover {
     }
 
     .last {
-        margin-top: 20px;
-        margin-left: 15px;
+        padding-top: 20px;
+        padding-left: 15px;
         height: 300px;
     }
 
@@ -479,6 +477,11 @@ body a:hover {
         justify-content: center;
     }
 
+    .location{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
     .last {
         height: 260px;
         width: 220px;
@@ -489,6 +492,17 @@ body a:hover {
         width: 210px;
     }
 }
+
+@media (max-width: 660px) {
+
+    .main-pic {
+        display: none;
+    }
+
+    .input {
+        display: none;
+    }
+    }
 
 @media (max-width: 426px) {
 
@@ -518,7 +532,7 @@ body a:hover {
     }
 
 
-    .salegroup a,
+    .sale-title a,
     .salegroup img,
     .main-pic,
     .sale-title,
@@ -537,6 +551,10 @@ body a:hover {
         grid-template-rows: 9.375rem 9.375rem 9.375rem;
         grid-template-columns: 17.5rem;
         align-content: space-around;
+    }
+
+    .small-pic a {
+        font-size: 2rem;
     }
 
     .small-1 {
@@ -617,18 +635,14 @@ body a:hover {
 }
 
 .goback {
-    width: 5rem;
-    height: 5.0625rem;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .goback img {
-    width: 4rem;
-    height: 4rem;
-    align-items: center;
-
+    object-fit: contain;
 }
 
 .a1 {
@@ -757,6 +771,7 @@ body a:hover {
 
     .a1 {
         font-size: 2.5rem;
+        padding-right: 2rem;
     }
 
     .main-login {
@@ -847,43 +862,45 @@ body a:hover {
 /* ******CAMPERAS - BLUSAS - PANTALONES***** */
 
 /* BODY */
+
 .galeria-page {
     background-image: url(../asset/backgrounds/gallery-BG.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: auto;
     width: 100%;
-
 }
 
 /* HEADER */
-.galeria-menu {
-    /* background-image: url(../asset/backgrounds/girl-smiling-full-big.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 25rem;
+
+.gal-nav {
+    width: 100%;
 }
 
 .galeria-list {
+    width: 100%;
     font-size: 3.125rem;
+    padding: 0;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
     list-style: none;
-    justify-content: space-between;
-    padding-top: 2.5rem;
-    padding-right: 2.5rem;
-    padding-left: 2.5rem;
+    justify-content: space-around;
 }
 
-.galeria-list li {
+.galeria-list a, h1 {
+    color: white;
+}
+
+.gal-title {
+    height: 12.5rem;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-gal {
     display: flex;
     flex-direction: row;
-    padding-top: 6.25rem;
     font-size: 6.25rem;
     justify-content: center;
 }
@@ -893,9 +910,11 @@ body a:hover {
 /* blusas */
 
 .master-grid {
-    height: 1380px;
+    display: flex;
+    flex-direction: column;
     justify-items: center;
     padding-left: 1.25rem;
+    justify-content: space-around;
 }
 
 .master-grid p {
@@ -906,8 +925,8 @@ body a:hover {
 
 .left-section {
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 500px 40px;
+    grid-template-columns: 18.75rem 18.75rem 18.75rem;
+    grid-template-rows: 25rem 2.5rem;
     justify-content: space-around;
 }
 
@@ -966,8 +985,8 @@ body a:hover {
 
 .mid-grid {
     display: grid;
-    grid-template-columns: 266px 266px 266px 266px 266px;
-    grid-template-rows: 350px 40px 350px 40px;
+    grid-template-columns: 12.5rem 12.5rem 12.5rem 12.5rem 12.5rem;
+    grid-template-rows: 18.75rem 2.5rem 18.75rem 2.5rem;
     justify-content: space-around;
     padding-right: 20px;
 }
@@ -1366,10 +1385,6 @@ body a:hover {
 
 /* FOOTER */
 
-footer {
-    height: 100px;
-}
-
 .media {
     width: 100%;
     display: inline-flex;
@@ -1377,6 +1392,7 @@ footer {
 }
 
 .media h2 {
+    height: 5.625rem;
     font-size: 80px;
     color: white;
     padding-left: 50px;
@@ -1390,16 +1406,18 @@ footer {
     align-items: center;
 }
 
-
 @media (max-width: 1024px) {
 
     .master-grid {
-        height: 1600px;
+        height: max-content;
+        justify-content: start;
+        background-size: cover;
+        gap: 16px;
     }
 
     .left-section {
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 350px 40px;
+        grid-template-columns: 12.5rem 12.5rem 12.5rem;
+        grid-template-rows: 18.75rem 2.5rem;
         justify-content: space-around;
     }
 
@@ -1416,10 +1434,11 @@ footer {
     }
 
     .mid-grid {
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows: 350px 40px 350px 40px 350px 40px;
+        grid-template-columns: 12.5rem 12.5rem 12.5rem;
+        grid-template-rows: 18.75rem 2.5rem 18.75rem 2.5rem 18.75rem 2.5rem;
         justify-content: space-around;
         padding: 0;
+        overflow: auto;
     }
 
     .blusa-pic2-2 {
@@ -1512,29 +1531,29 @@ footer {
         height: 2600px;
     }
 
-    .galeria-menu {
-        height: 200px;
+    .galeria-list {
+        justify-content: space-around;
     }
 
-    .gal-nav {
-        display: none;
+    .galeria-list li {
+        font-size: 1.5rem;
     }
 
     .title-gal {
-        font-size: 40px;
+        font-size: 5rem;
     }
 
     .master-grid {
         height: 2200px;
     }
-
+    
     .left-section {
         display: grid;
-        grid-template-columns: 140px 140px;
+        grid-template-columns: 200px 200px;
         grid-template-rows: 300px 60px;
         justify-content: center;
         justify-content: space-around;
-    }
+    } 
 
     .pants-pic1-1,
     .blusa-pic1-1,
@@ -1565,8 +1584,8 @@ footer {
 
     .mid-grid {
         display: grid;
-        grid-template-columns: 140px 140px;
-        grid-template-rows: 300px 60px 300px 60px 300px 60px 300px 60px 300px 60px;
+        grid-template-columns: 12.5rem 12.5rem;
+        grid-template-rows: 18.75rem 3.75rem 18.75rem 3.75rem 18.75rem 3.75rem 18.75rem 3.75rem 18.75rem 60px;
         justify-content: center;
         justify-content: space-around;
     }
@@ -1687,5 +1706,31 @@ footer {
     .icon {
         width: min-content;
         gap: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+
+
+    .master-grid {
+        height: max-content;
+    }
+
+    .left-section {
+            display: grid;
+            grid-template-columns: 140px 140px;
+            grid-template-rows: 250px 60px;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+        }
+    
+    .mid-grid {
+        display: grid;
+        grid-template-columns: 140px 140px;
+        grid-template-rows: 250px 60px 250px 60px 250px 60px 250px 60px 250px 60px;
+        justify-content: center;
+        justify-content: space-around;
+        align-items: center;
     }
 }
