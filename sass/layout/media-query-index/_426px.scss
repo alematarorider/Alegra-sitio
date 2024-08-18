@@ -1,0 +1,84 @@
+@media (max-width: 426px) {
+
+    .index-body {
+        background: url(../asset/backgrounds/gallery-BG.jpg) no-repeat center/cover;
+
+        header {
+            background: none;
+        }
+    }
+
+    .main-nav {
+        height: min-content;
+    }
+
+    .options {
+        display: flex;
+        gap: 16px;
+
+        a {
+            font-size: 1rem;
+        }
+    }
+
+    .sale-title,
+    .sale-title a,
+    .salegroup img,
+    .main-pic,
+    .sale-title h2,
+    .first h2 {
+        display: none;
+    }
+
+    .index-main {
+        background: none;
+    }
+
+    .small-pic {
+        display: grid;
+        width: 20rem;
+        grid-template-rows: repeat(3, 9.375rem);
+        grid-template-columns: 17.5rem;
+        align-content: space-around;
+
+        a {
+            font-size: 2rem;
+        }
+
+        .small-1,
+        .small-2,
+        .small-3 {
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .small-1 { grid-area: 1/1; background-image: url(../asset/iphone/coat320.jpg); }
+        .small-2 { grid-area: 3/1; background-image: url(../asset/iphone/pant320.jpg); }
+        .small-3 { grid-area: 2/1; background-image: url(../asset/iphone/blusa320.jpg); }
+    }
+
+    .index-footer {
+        height: 6.25rem;
+        background-color: rgb(83, 83, 52);
+
+        .first {
+            background: none;
+            height: 6.25rem;
+            width: 100%;
+            justify-content: center;
+        }
+
+        h2 {
+            flex-direction: column;
+            height: 3.125rem;
+        }
+    }
+
+    .input,
+    .footer,
+    .last {
+        display: none;
+    }
+}

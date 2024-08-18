@@ -1,0 +1,65 @@
+@media (max-width: 1024px) {
+
+    .index-body {
+        header {
+            width: 100%;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            background-position-y: -10rem;
+        }
+    }
+
+    .main {
+        width: min-content;
+        font-size: 10rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .main-nav {
+        width: 100%;
+        font-size: 5.5rem;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        align-items: center;
+    }
+
+    .options {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            width: 120px;
+        }
+    }
+
+    .sale-title {
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .input {
+        padding-left: 2rem;
+    }
+
+    .footer {
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                width: max-content;
+                align-items: end;
+            }
+        }
+    }
+}

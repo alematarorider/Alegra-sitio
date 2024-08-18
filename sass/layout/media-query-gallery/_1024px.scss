@@ -1,0 +1,116 @@
+@media (max-width: 1024px) {
+
+    .master-grid {
+        gap: 16px;}
+
+    .master-grid .left-section {
+        grid-template-columns: 12.5rem 12.5rem 12.5rem;
+        grid-template-rows: 18.75rem 2.5rem;
+        justify-content: space-around;
+    }
+
+    .left-section .blusa-pic1-1 img,
+    .left-section .blusa-pic1-2 img,
+    .left-section .blusa-pic1-3 img,
+    .left-section .camperas-pic1-1 img,
+    .left-section .camperas-pic1-2 img,
+    .left-section .camperas-pic1-3 img,
+    .left-section .pants-pic1-1 img,
+    .left-section .pants-pic1-2 img,
+    .left-section .pants-pic1-3 img {
+    width: 12.5rem;
+    height: 18.75rem;
+}
+
+.master-grid .mid-grid {
+    grid-template-columns: 12.5rem 12.5rem 12.5rem;
+    grid-template-rows: 18.75rem 2.5rem 18.75rem 2.5rem 18.75rem 2.5rem;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.blusa-pic2-2 {
+    background-position-y: 2px;
+    background-size: cover;
+}
+
+.blusa-pic2-3 {
+    background-size: cover;
+    background-position-x: -30px;
+}
+
+.mid-grid .blusa-pic2-4,
+.camperas-pic2-4,
+.pants-pic2-4 {
+    grid-area: 3/1;
+    background-size: cover;
+}
+
+.mid-grid .pic2-4description {
+    grid-area: 4/1;
+}
+
+.mid-grid .blusa-pic2-5,
+.camperas-pic2-5,
+.pants-pic2-5 {
+    grid-area: 3/2;
+    background-size: cover;
+}
+
+.mid-grid .pic2-5description {
+    grid-area: 4/2;
+}
+
+.mid-grid .blusa-pic3-1,
+.camperas-pic3-1,
+.pants-pic3-1 {
+    grid-area: 3/3;
+    background-size: cover;
+}
+
+.mid-grid .pic3-1description {
+    grid-area: 4/3;
+}
+
+.mid-grid .blusa-pic3-2,
+.camperas-pic3-2,
+.pants-pic3-2 {
+    grid-area: 5/1;
+    background-size: cover;
+}
+
+.mid-grid .pic3-2description {
+    grid-area: 6/1;
+}
+
+.mid-grid .blusa-pic3-3,
+.camperas-pic3-3,
+.pants-pic3-3 {
+    grid-area: 5/2;
+    background-size: cover;
+}
+
+.mid-grid .pic3-3description {
+    grid-area: 6/2;
+}
+
+.mid-grid .blusa-pic3-4,
+.camperas-pic3-4,
+.pants-pic3-4 {
+    grid-area: 5/3;
+    background-size: cover;
+}
+
+.mid-grid .pic3-4description {
+    grid-area: 6/3;
+}
+
+.mid-grid .blusa-pic3-5,
+.camperas-pic3-5,
+.pants-pic3-5 {
+    display: none;
+}
+.mid-grid .pic3-5description {
+    display: none;
+}
+}

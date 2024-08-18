@@ -1,0 +1,17 @@
+@import "./base/reset";
+@import "./utilities/mixins";
+@import "./base/fuente";
+@import "./layout/body-index";
+@import "./layout/header-index";
+@import "./layout/header-gallery";
+@import "./layout/main-index";
+@import "./layout/main-gallery";
+@import "./layout/footer-index";
+@import "./layout/footer-gallery";
+@import "./layout/media-query-index/1024px";
+@import "./layout/media-query-gallery/1024px";
+@import "./layout/media-query-index/768px";
+@import "./layout/media-query-gallery/650px";
+@import "./layout/media-query-index/660px";
+@import "./layout/media-query-index/426px";
+@import "./layout/media-query-gallery/425px"

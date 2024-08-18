@@ -1,0 +1,51 @@
+/* ****************Index******************** */
+.index-body header {
+    @include flex (row, nowrap, none, none);
+    height: 30rem;
+    width: 100%;
+}
+
+.main {
+    color: white;
+    font-size: 15rem;
+    text-align: center;
+    width: 100%;
+}
+
+.all {
+    width: 100%;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    height: auto;
+    margin-top: 10rem;
+    color: white;
+    width: 100%;
+}
+
+.options {
+    @include flex (row, none, space-between, none);
+    padding-right: 2rem;
+
+    li {
+        display: flex;
+        font-size: 2.25rem;
+        list-style: none;
+
+        a {
+            display: flex;
+            justify-content: start;
+
+            &:hover {
+                color: blueviolet;
+            }
+        }
+    }
+}
+
+.color {
+    text-decoration: none;
+}
+

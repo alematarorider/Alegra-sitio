@@ -1,0 +1,27 @@
+.gal-nav {
+    width: 100%;
+}
+
+.galeria-list {
+    width: 100%;
+    @include flex (none, nowrap, space-around, none);
+    font-size: 3.125rem;
+    padding: 0;
+    list-style: none;
+    a {
+        color: white;
+    }
+}
+
+.all {
+    width: 100%;
+}
+
+.gal-title {
+    width: 100%;
+    h1 {
+        color: white;
+        font-size: 6.25rem;
+        text-align: center;
+    }
+}

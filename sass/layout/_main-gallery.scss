@@ -1,0 +1,354 @@
+/* ****************Galeria******************** */
+/* ******CAMPERAS - BLUSAS - PANTALONES***** */
+.master-grid {
+    @include flex (column, none, space-around, none); 
+    justify-items: center;
+    padding-left: 1.25rem;
+
+    p {
+        color: white;
+        font-size: 1.25rem;
+        font-weight: bolder;
+    }
+}
+
+.left-section {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 18.75rem);
+    grid-template-rows: 25rem 5rem;
+
+    .blusa-pic1-1,
+    .blusa-pic1-2,
+    .blusa-pic1-3 {
+        img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 25rem;
+            width: 18.75rem;
+            align-items: center;
+        }
+    }
+
+    .blusa-pic1-1 {
+        grid-area: 1/1;
+    }
+
+    .blusa-pic1-2 {
+        grid-area: 1/2;
+    }
+
+    .blusa-pic1-3 {
+        grid-area: 1/3;
+    }
+
+    .pic1-1description,
+    .pic1-2description,
+    .pic1-3description {
+        @include inline (row, none, space-between, none);
+        padding-right: .9375rem;
+        padding-left: .9375rem;
+    }
+
+    .pic1-1description {
+        grid-area: 2/1;
+    }
+
+    .pic1-2description {
+        grid-area: 2/2;
+    }
+
+    .pic1-3description {
+        grid-area: 2/3;
+    }
+}
+
+.mid-grid {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(5, 12.5rem);
+    grid-template-rows: repeat (5, 18.75rem 5rem);
+    padding-right: 1.25rem;
+
+    .blusa-pic2-1,
+    .blusa-pic2-2,
+    .blusa-pic2-3,
+    .blusa-pic2-4,
+    .blusa-pic2-5,
+    .blusa-pic3-1,
+    .blusa-pic3-2,
+    .blusa-pic3-3,
+    .blusa-pic3-4,
+    .blusa-pic3-5 {
+        img {
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 12.5rem;
+            height: 18.75rem;
+        }
+    }
+
+    .blusa-pic2-1 {
+        grid-area: 1/1;
+    }
+
+    .blusa-pic2-2 {
+        grid-area: 1/2;
+        background-position-y: -2.8125rem;
+    }
+
+    .blusa-pic2-3 {
+        grid-area: 1/3;
+    }
+
+    .blusa-pic2-4 {
+        grid-area: 1/4;
+    }
+
+    .blusa-pic2-5 {
+        grid-area: 1/5;
+    }
+
+    .blusa-pic3-1 {
+        grid-area: 3/1;
+    }
+
+    .blusa-pic3-2 {
+        grid-area: 3/2;
+    }
+
+    .blusa-pic3-3 {
+        grid-area: 3/3;
+    }
+
+    .blusa-pic3-4 {
+        grid-area: 3/4;
+    }
+
+    .blusa-pic3-5 {
+        grid-area: 3/5;
+    }
+
+    .pic2-1description,
+    .pic2-2description,
+    .pic2-3description,
+    .pic2-4description,
+    .pic2-5description,
+    .pic3-1description,
+    .pic3-2description,
+    .pic3-3description,
+    .pic3-4description,
+    .pic3-5description {
+        @include inline (row, none, space-between, none);
+        padding-right: .9375rem;
+        padding-left: .9375rem;
+    }
+
+    .pic2-1description {
+        grid-area: 2/1;
+    }
+
+    .pic2-2description {
+        grid-area: 2/2;
+    }
+
+    .pic2-3description {
+        grid-area: 2/3;
+    }
+
+    .pic2-4description {
+        grid-area: 2/4;
+    }
+
+    .pic2-5description {
+        grid-area: 2/5;
+    }
+
+    .pic3-1description {
+        grid-area: 4/1;
+    }
+
+    .pic3-2description {
+        grid-area: 4/2;
+    }
+
+    .pic3-3description {
+        grid-area: 4/3;
+    }
+
+    .pic3-4description {
+        grid-area: 4/4;
+    }
+
+    .pic3-5description {
+        grid-area: 4/5;
+    }
+}
+
+// Camperas 
+.camperas-pic1-1,
+.camperas-pic1-2,
+.camperas-pic1-3 {
+    img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 25rem;
+        width: 18.75rem;
+        align-items: center;
+    }
+}
+
+.camperas-pic1-1 {
+    grid-area: 1/1;
+}
+
+.camperas-pic1-2 {
+    grid-area: 1/2;
+}
+
+.camperas-pic1-3 {
+    grid-area: 1/3;
+}
+
+.camperas-pic2-1,
+.camperas-pic2-2,
+.camperas-pic2-3,
+.camperas-pic2-4,
+.camperas-pic2-5,
+.camperas-pic3-1,
+.camperas-pic3-2,
+.camperas-pic3-3,
+.camperas-pic3-4,
+.camperas-pic3-5 {
+    img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 12.5rem;
+        height: 18.75rem;
+    }
+}
+
+.camperas-pic2-1 {
+    grid-area: 1/1;
+}
+
+.camperas-pic2-2 {
+    grid-area: 1/2;
+    background-position-y: -2.8125rem;
+}
+
+.camperas-pic2-3 {
+    grid-area: 1/3;
+}
+
+.camperas-pic2-4 {
+    grid-area: 1/4;
+}
+
+.camperas-pic2-5 {
+    grid-area: 1/5;
+}
+
+.camperas-pic3-1 {
+    grid-area: 3/1;
+}
+
+.camperas-pic3-2 {
+    grid-area: 3/2;
+}
+
+.camperas-pic3-3 {
+    grid-area: 3/3;
+}
+
+.camperas-pic3-4 {
+    grid-area: 3/4;
+}
+
+.camperas-pic3-5 {
+    grid-area: 3/5;
+}
+
+// Pants
+.pants-pic1-1,
+.pants-pic1-2,
+.pants-pic1-3 {
+    img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 25rem;
+        width: 18.75rem;
+        align-items: center;
+    }
+}
+
+.pants-pic1-1 {
+    grid-area: 1/1;
+}
+
+.pants-pic1-2 {
+    grid-area: 1/2;
+}
+
+.pants-pic1-3 {
+    grid-area: 1/3;
+}
+
+.pants-pic2-1,
+.pants-pic2-2,
+.pants-pic2-3,
+.pants-pic2-4,
+.pants-pic2-5,
+.pants-pic3-1,
+.pants-pic3-2,
+.pants-pic3-3,
+.pants-pic3-4,
+.pants-pic3-5 {
+    img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 12.5rem;
+        height: 18.75rem;
+    }
+}
+
+.pants-pic2-1 {
+    grid-area: 1/1;
+}
+
+.pants-pic2-2 {
+    grid-area: 1/2;
+    background-position-y: -2.8125rem;
+}
+
+.pants-pic2-3 {
+    grid-area: 1/3;
+}
+
+.pants-pic2-4 {
+    grid-area: 1/4;
+}
+
+.pants-pic2-5 {
+    grid-area: 1/5;
+}
+
+.pants-pic3-1 {
+    grid-area: 3/1;
+}
+
+.pants-pic3-2 {
+    grid-area: 3/2;
+}
+
+.pants-pic3-3 {
+    grid-area: 3/3;
+}
+
+.pants-pic3-4 {
+    grid-area: 3/4;
+}
+
+.pants-pic3-5 {
+    grid-area: 3/5;
+}

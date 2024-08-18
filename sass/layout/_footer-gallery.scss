@@ -1,0 +1,17 @@
+.media {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+
+    h2 {
+        height: 5.625rem;
+        font-size: 5rem;
+        color: white;
+        padding-left: 50px;
+    }
+}
+
+.icon {
+    width: 87.5rem;
+    @include inline (row, none, space-around, center);
+}

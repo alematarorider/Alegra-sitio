@@ -1,0 +1,77 @@
+.index-footer {
+    @include flex (none, none, space-between, none);
+    width: 100%;
+    background-color: #1F3732;
+
+    .first {
+        background-image: url(../asset/backgrounds/colibri.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0rem;
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        h2 {
+            font-size: 3rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            flex: 1;
+        }
+    }
+
+    .media-index {
+        @include flex (row, none, space-evenly, none);
+    }
+
+    .input {
+        width: 40%;
+        @include flex (column, none, space-around, none);
+        p {
+            margin-bottom: 0;
+        }
+    }
+    }
+
+    .footer {
+        width: 100%;
+        @include flex (row, none, space-between, none);
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0;
+            padding-top: 2.5rem;
+
+            li {
+                list-style: none;
+                display: inline-flex;
+            }
+        }
+    }
+
+    .last {
+        width: 20%;
+        padding-right: .625rem;
+        @include flex (column, none, space-around, none);
+    }
+
+
+    .location {
+        @include flex (none, none, space-around, center);
+        .address{
+            font-size: larger;
+        }
+    }
+
+    .iframe {
+        position: relative;
+        iframe {
+            width: 100%;
+        }
+    }
+
