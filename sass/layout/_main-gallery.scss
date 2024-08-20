@@ -66,9 +66,8 @@
 .mid-grid {
     display: grid;
     justify-content: space-around;
-    grid-template-columns: repeat(5, 12.5rem);
+    grid-template-columns: repeat (5, 12.5rem);
     grid-template-rows: repeat (5, 18.75rem 5rem);
-    padding-right: 1.25rem;
 
     .blusa-pic2-1,
     .blusa-pic2-2,

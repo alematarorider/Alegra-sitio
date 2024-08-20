@@ -15,10 +15,8 @@
 }
 
 
-@mixin grids($direction, $wrap, $justify, $align) {
+@mixin grids ($justify, $align) {
     display: grid;
-    flex-direction: $direction;
-    flex-wrap: $wrap;
     justify-content: $justify;
     align-items: $align;
 }

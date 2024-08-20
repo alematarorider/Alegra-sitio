@@ -1,0 +1,14 @@
+.login-footer {
+    width: 100%;
+    height: 6.25rem;
+    @include flex (row, none, center, none);
+}
+
+.login-section {
+    width: 37.5rem;
+}
+
+.login-media {
+    @include flex (row, none, center, none);
+    justify-content: space-around;
+}

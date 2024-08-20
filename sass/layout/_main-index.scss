@@ -1,4 +1,4 @@
-/* ****************Galeria******************** */
+/* ****************INDEX******************** */
 .index-main {
     height: 960px;
 }
@@ -11,10 +11,10 @@
 
 .sale-title {
     @include flex (column, none, space-between, none);
-    height: 928px;
+    height: 58rem;
 
     h2 {
-        margin-top: 64px;
+        margin-top: 4rem;
         font-size: 64px;
         text-align: center;
     }
@@ -31,8 +31,8 @@
 }
 
 .sales {
-    font-size: 48px;
-    height: 450px;
+    font-size: 3rem;
+    height: 28.125rem;
     text-align: center;
 }
 
@@ -53,8 +53,8 @@
         text-align: center;
 
         img {
-            height: 256px;
-            width: 192px;
+            height: 16rem;
+            width: 12rem;
 
             &:hover {
                 filter: drop-shadow(.125rem .125rem .3125rem yellow);

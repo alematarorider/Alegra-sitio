@@ -1,0 +1,19 @@
+.log-title {
+    color: white;
+    font-size: 2rem;
+    width: 100%;
+    @include flex(row, none, center, none);
+}
+
+.goback {
+    @include flex(none, none, center, center);
+
+    img {
+        object-fit: contain;
+    }
+}
+
+.a1 {
+    @include flex (column, none, center, center);
+    width: 100%;
+}

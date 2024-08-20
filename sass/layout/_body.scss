@@ -1,4 +1,5 @@
-/* ****************Galeria******************** */.index-body {
+/* ****************Galeria******************** */
+.index-body {
     color: white;
     display: inline;
     flex-direction: row;
@@ -7,6 +8,18 @@
     background-size: cover;
     background-position: auto;
 }
+
+/*********************login********************/
+.login-body {
+    background-image: url(../asset/backgrounds/fullback-login.jpg);
+    background-size: cover;
+    @include flex (column, none, none, center);
+    gap: 36px;
+    width: 100%;
+    height: max-content;
+    color: white;
+}
+
 
 /* ****************Galeria******************** */
 /* ******CAMPERAS - BLUSAS - PANTALONES***** */

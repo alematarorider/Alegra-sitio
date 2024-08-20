@@ -1,0 +1,98 @@
+.main-login {
+    width: 100%;
+    @include flex (column, none, none, center);
+}
+
+.section1 {
+    background-image: url(../asset/backgrounds/hanged-bw.jpg);
+    width: 100%;
+    height: 25rem;
+    @include flex (row, none, center, center);
+    background-size: cover;
+    align-content: center;
+}
+
+.blur1 {
+    width: 18.75rem;
+    height: 18.75rem;
+    @include flex (row, none, center, none);
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.log-in1 {
+    width: 25rem;
+    height: 18.75rem;
+    @include flex (column, none, space-between, center);
+    margin: 0;
+
+    h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+}
+
+.log-in-input {
+    display: flex;
+    flex-direction: column;
+    width: 9.375rem;
+    height: 4.0625rem;
+}
+
+.press-login {
+    align-items: flex-start;
+    width: 150px;
+    height: 20px;
+
+    &:focus {
+        color: blueviolet;
+    }
+}
+
+.forgot a {
+    @include flex (row, none, center, none);
+    color: white;
+}
+
+.section2 {
+    background-image: url(../asset/backgrounds/department-bw.jpg);
+    margin-top: 2.5rem;
+    width: 100%;
+    height: 25rem;
+    @include flex (row, none, center, center);
+    align-content: center;
+}
+
+.blur2 {
+    width: 18.75rem;
+    height: 18.75rem;
+    @include flex (row, none, center, none);
+    align-content: center;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+.log-in2 {
+    width: 25rem;
+    height: 18.75rem;
+    @include flex (column, none, space-between, center);
+    margin: 0;
+
+    h2 {
+        font-size: 3rem;
+        margin: 0;
+    }
+}
+
+.sign-up-input {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+}
