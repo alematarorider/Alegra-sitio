@@ -25,7 +25,9 @@
         text-decoration: none;
 
         &:hover {
-            color: blueviolet;
+            background: linear-gradient(0deg, rgba(90, 45, 253, 1) 0%, rgba(195, 74, 34, 1) 100%);
+            background-clip: text;
+            color: transparent;
         }
     }
 }
@@ -43,8 +45,11 @@
 .small-pic {
     @include flex (column, none, space-around, none);
 
+
     a:hover {
-        color: yellow;
+        background: linear-gradient(0deg, rgba(90, 45, 253, 1) 0%, rgba(195, 74, 34, 1) 100%);
+        background-clip: text;
+        color: transparent;
     }
 
     .small-1,
@@ -55,11 +60,11 @@
         img {
             height: 16rem;
             width: 12rem;
+            box-shadow: .3125rem .3125rem .125rem rgb(160, 118, 96);
 
             &:hover {
-                filter: drop-shadow(.125rem .125rem .3125rem yellow);
+                filter: drop-shadow(.125rem .125rem .3125rem rgb(132, 96, 53));
             }
         }
     }
 }
-

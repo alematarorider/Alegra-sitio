@@ -50,6 +50,11 @@
             li {
                 list-style: none;
                 display: inline-flex;
+                &:hover a {
+                    background: linear-gradient(0deg,  rgba(90,45,253,1) 0%, rgba(195,74,34,1) 100%);
+                    background-clip: text;
+                    color: transparent;
+                }
             }
         }
     }
