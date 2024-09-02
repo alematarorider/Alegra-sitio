@@ -1019,13 +1019,13 @@ a {
       background-size: cover; }
     .small-pic .small-1 {
       grid-area: 1/1;
-      background-image: url(../asset/iphone/coat320.jpg); }
+      background-image: url(../asset/iphone/coat320s.jpg); }
     .small-pic .small-2 {
       grid-area: 3/1;
-      background-image: url(../asset/iphone/pant320.jpg); }
+      background-image: url(../asset/iphone/pant320s.jpg); }
     .small-pic .small-3 {
       grid-area: 2/1;
-      background-image: url(../asset/iphone/blusa320.jpg); }
+      background-image: url(../asset/iphone/blusa320s.jpg); }
   .index-footer {
     height: 6.25rem;
     background-color: #535334; }
